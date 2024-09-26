@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iagrot_mobile/register.dart';
 
 class login extends StatelessWidget {
   @override
@@ -65,7 +66,10 @@ class login extends StatelessWidget {
                 SizedBox(height: 10),
                 OutlinedButton(
                   onPressed: () {
-
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => register()),
+                    );
                   },
                   child: Text('Register'),
                   style: OutlinedButton.styleFrom(
